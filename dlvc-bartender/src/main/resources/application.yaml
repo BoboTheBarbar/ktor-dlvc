@@ -1,0 +1,4 @@
+ktor:
+  application:
+    modules:
+      - com.dlvc.ApplicationKt.module
