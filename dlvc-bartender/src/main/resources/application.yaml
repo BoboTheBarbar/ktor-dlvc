@@ -1,4 +1,6 @@
 ktor:
+  deployment:
+    host: 8080
   application:
     modules:
       - com.dlvc.ApplicationKt.module
