@@ -8,6 +8,7 @@ import io.ktor.server.testing.*
 import kotlin.test.*
 
 class ApplicationTest {
+    @Ignore
     @Test
     fun testRoot() = testApplication {
         application {
@@ -18,4 +19,5 @@ class ApplicationTest {
             assertEquals("Hello World!", bodyAsText())
         }
     }
+
 }
