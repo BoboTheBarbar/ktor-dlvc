@@ -33,7 +33,7 @@ class ApplicationTest {
     </body>
 </html>
         """.trimIndent(),
-            response
+            response.replace("\r\n", "\n")
         )
     }
 
