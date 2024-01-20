@@ -1,0 +1,11 @@
+<div class="content">
+    <div class="header">
+        <h1>Browse Items</h1>
+    </div>
+    <div th:each="item : ${items}">
+        <div class="item">
+            <h3 th:text="${item.name}">Item Name</h3>
+            <!-- Additional item details here -->
+        </div>
+    </div>
+</div>
