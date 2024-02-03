@@ -82,8 +82,8 @@
 
 <div class="sidebar">
     <h2>DLVC</h2>
-    <a href="#" th:href="@{/add}">Add Item</a>
-    <a href="#" th:href="@{/browse}">Browse Items</a>
+<!--    <a href="#" th:href="@{/add}">Add Item</a>-->
+<!--    <a href="#" th:href="@{/browse}">Browse Items</a>-->
 </div>
 
 <div class="content">
@@ -91,7 +91,7 @@
         <h1>Add New Item</h1>
     </div>
 
-    <form th:action="@{/add}" th:object="${item}" method="post">
+    <form action="/add" th:object="${item}" method="post">
         <div class="form-field">
             <label for="name">Name:</label>
             <input type="text" id="name" th:field="*{name}" placeholder="Name" required />
