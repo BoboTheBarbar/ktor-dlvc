@@ -1,8 +1,5 @@
-package com.dlvc.plugins
+package com.dlvc.examples
 
-import com.dlvc.routes.customerRouting
-import com.dlvc.routes.orderRouting
-import com.dlvc.routes.totalizeOrderRoute
 import io.ktor.server.application.*
 import io.ktor.server.routing.*
 

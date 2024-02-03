@@ -1,6 +1,6 @@
-package com.dlvc.routes
+package com.dlvc.examples
 
-import com.dlvc.models.orderStorage
+import com.dlvc.examples.models.orderStorage
 import io.ktor.server.application.*
 import io.ktor.http.*
 import io.ktor.server.response.*

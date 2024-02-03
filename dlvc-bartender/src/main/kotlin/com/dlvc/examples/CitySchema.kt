@@ -1,4 +1,4 @@
-package com.dlvc.plugins
+package com.dlvc.examples
 
 import kotlinx.coroutines.*
 import kotlinx.serialization.Serializable

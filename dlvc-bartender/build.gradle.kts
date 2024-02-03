@@ -6,11 +6,15 @@ val postgresVersion: String by project
 val h2Version: String by project
 val kotestVersion: String by project
 
+val coroutineVersion = "1.7.3"
+val ktorTest = "2.3.7"
+
 plugins {
     kotlin("jvm") version "1.9.22"
     id("io.ktor.plugin") version "2.3.7"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
 }
+
 group = "com.dlvc"
 
 version = "0.0.1"
@@ -25,6 +29,7 @@ application {
 repositories {
     mavenCentral()
 }
+
 dependencies {
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-server-content-negotiation-jvm")
@@ -35,7 +40,10 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
     implementation("io.ktor:ktor-server-config-yaml")
     implementation("io.ktor:ktor-server-thymeleaf:$ktorVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
+
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
+    testImplementation("io.ktor:ktor-server-test-host-jvm:$ktorTest")
 }

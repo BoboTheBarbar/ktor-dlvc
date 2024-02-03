@@ -1,7 +1,7 @@
-package com.dlvc.routes
+package com.dlvc.examples
 
-import com.dlvc.models.Customer
-import com.dlvc.models.customerStorage
+import com.dlvc.examples.models.Customer
+import com.dlvc.examples.models.customerStorage
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*

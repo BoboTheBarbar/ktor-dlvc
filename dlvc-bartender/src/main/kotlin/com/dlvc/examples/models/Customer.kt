@@ -1,4 +1,4 @@
-package com.dlvc.models
+package com.dlvc.examples.models
 
 import kotlinx.serialization.Serializable
 

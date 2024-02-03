@@ -1,6 +1,6 @@
 package com.dlvc
 
-import com.dlvc.plugins.*
+import com.dlvc.examples.configureRouting
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*

@@ -1,4 +1,4 @@
-package com.dlvc.plugins
+package com.dlvc.examples
 
 import io.ktor.http.*
 import io.ktor.server.application.*

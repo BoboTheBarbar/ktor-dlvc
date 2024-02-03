@@ -1,4 +1,4 @@
-package com.dlvc.plugins
+package com.dlvc.examples
 
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*

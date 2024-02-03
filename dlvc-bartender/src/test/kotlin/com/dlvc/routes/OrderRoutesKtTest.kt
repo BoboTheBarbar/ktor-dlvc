@@ -1,6 +1,6 @@
 package com.dlvc.routes
 
-import com.dlvc.plugins.configureRouting
+import com.dlvc.examples.configureRouting
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.shouldNotHaveLength
 import io.ktor.client.request.*
