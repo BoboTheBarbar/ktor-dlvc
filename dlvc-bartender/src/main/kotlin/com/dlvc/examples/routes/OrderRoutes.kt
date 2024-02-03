@@ -1,4 +1,4 @@
-package com.dlvc.examples
+package com.dlvc.examples.routes
 
 import com.dlvc.examples.models.orderStorage
 import io.ktor.server.application.*

@@ -1,4 +1,4 @@
-package com.dlvc.examples
+package com.dlvc.examples.routes
 
 import com.dlvc.examples.models.Customer
 import com.dlvc.examples.models.customerStorage

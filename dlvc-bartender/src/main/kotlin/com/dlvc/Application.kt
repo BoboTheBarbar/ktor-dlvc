@@ -1,7 +1,6 @@
 package com.dlvc
 
 import com.dlvc.examples.models.Customer
-import com.dlvc.examples.configureDatabases
 import com.dlvc.examples.configureRouting
 import com.dlvc.examples.configureSerialization
 import io.ktor.server.application.*
@@ -47,6 +46,5 @@ fun Application.module() {
     }
 
     configureSerialization()
-    configureDatabases()
     configureRouting()
 }
