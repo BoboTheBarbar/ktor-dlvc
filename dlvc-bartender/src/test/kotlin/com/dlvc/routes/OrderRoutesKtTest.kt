@@ -1,6 +1,6 @@
 package com.dlvc.routes
 
-import com.dlvc.examples.configureRouting
+import com.dlvc.examples.configureExampleRoutes
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.shouldNotHaveLength
 import io.ktor.client.request.*
@@ -16,7 +16,7 @@ class OrderRoutesKtTest {
     fun orderRouting() {
         testApplication {
             application {
-                configureRouting()
+                configureExampleRoutes()
             }
             client.get("/order").apply {
                 status shouldBe HttpStatusCode.OK

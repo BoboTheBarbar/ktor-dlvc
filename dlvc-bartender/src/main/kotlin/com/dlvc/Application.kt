@@ -1,7 +1,6 @@
 package com.dlvc
 
-import com.dlvc.examples.models.Customer
-import com.dlvc.examples.configureRouting
+import com.dlvc.examples.configureExampleRoutes
 import com.dlvc.examples.configureSerialization
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
@@ -31,20 +30,6 @@ fun Application.module() {
         }
     }
 
-    routing {
-        get("/index") {
-            val sampleUser = Customer("1", "John", "Doe", "John.Doe@mail.com")
-            call.respond(ThymeleafContent("index", mapOf("user" to sampleUser)))
-        }
-    }
-
-    routing {
-        get("/store") {
-            val sampleUser = Customer("1", "John", "Doe", "John.Doe@mail.com")
-            call.respond(ThymeleafContent("storefront", mapOf("user" to sampleUser)))
-        }
-    }
-
     configureSerialization()
-    configureRouting()
+    configureExampleRoutes()
 }
